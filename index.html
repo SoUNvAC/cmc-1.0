@@ -106,11 +106,12 @@ if(StartHour < 0){
 }
 
 //把时间添加进变量
-var wdm_qingjia_starttime="2022" + "-" + Month + "-" + 0+Time.getDay() +" "+ StartHour +":"+ Time.getMinutes();
-var wdm_qingjia_endtime=" 2022" + "-" + Month + "-" + 0+Time.getDay() +" "+ EndHour +":"+ Time.getMinutes();
+var wdm_qingjia_starttime="2022" + "-" + Month + "-" + 0+Time.getDate() +" "+ StartHour +":"+ Time.getMinutes();
+var wdm_qingjia_endtime=" 2022" + "-" + Month + "-" + 0+Time.getDate() +" "+ EndHour +":"+ Time.getMinutes();
 //变量写入table cell
 $("#wdm_qingjia_starttime").html(wdm_qingjia_starttime);
 $("#wdm_qingjia_endtime").html(wdm_qingjia_endtime);
+
 function srinit(){
     //强制引入本地json文件
 	var fakedata = "";
